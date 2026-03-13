@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -101,7 +100,7 @@ button:hover {
 </div>
 
 <script>
-const API_KEY = "YOUR_API_KEY"; // put OpenWeather key
+const API_KEY = "d1b268b3ec0ab5153665dd631815d58a"; // put OpenWeather key
 const logBox = document.getElementById("log");
 const historyBox = document.getElementById("history");
 const weatherBox = document.getElementById("weatherResult");
@@ -141,7 +140,7 @@ function loadHistory(){
 function handleSearch(){
   const city = document.getElementById("cityInput").value.trim();
   if(!city){
-    weatherBox.innerHTML = "⚠️ Enter city";
+    weatherBox.innerHTML = "Enter city";
     return;
   }
   fetchWeather(city);
@@ -190,6 +189,12 @@ function showWeather(data){
 </script>
 </body>
 </html>
+
+
+
+
+
+
 
 
 
